@@ -1,0 +1,76 @@
+=========================
+## -- SYPNOSIS -- ##
+=========================
+
+This program computes the different seek times of different disk scheduling algorithms (such as FCFS, SSTF, SCAN, CSCAN, LOOK, CLOOK) with multithreading. 
+Curtin University COMP2006
+Operating Systems Assignment
+Author: Alastair Kho
+Curtin ID: 20214878
+
+
+=========================
+## -- CONTENTS -- ##
+=========================
+
+## -- Core Code -- ##
+simulator.c - Code file that contains the core code for running the thread simulator
+
+scheduler.c - Code file that contains the scheduler functions.
+
+scheduler.h - Header file that holds function declarations, macro defines, and DiskSectorRequest Struct
+
+## -- Core Code Dependencies -- ##
+stdio.h - Header file for standard input & output.
+
+stdlib.h - Header file to access standard library
+
+pthread.h - Header file to access pthread library, including pthread_mutex_lock pthread_mutex_unlock, 
+            pthread_cond_wait, pthread_cond_signal, pthread_create, and pthread_join.
+
+string.h - Header file for accessing string library, including strcmp and others.
+
+limits.h - Header for accessing limit macros.
+
+## -- Other Files -- #
+makefile - File used for organized code compiling
+
+input1 - Input example 1
+
+input2 - Input example 2
+
+input3 - Input example 3
+
+=========================
+## -- OTHER DETAILS -- ##
+=========================
+
+## -- Simulator Program Details -- ##
+Program requires user to enter a valid file name
+If input received is QUIT, the program will exit accordingly
+
+## -- Code Compilation -- ##
+To compile the code, enter the following in terminal in the program directory to execute the makefile:
+
+	make
+
+To clear the code object files, enter the following in terminal in the program directory to execute the makefile:
+
+	make clean
+
+To run the program, enter the following in the terminal after executing “make”:
+
+    ./simulator
+
+The program will then ask for you to input a valid file name to calculate seek times. Entering “QUIT” will exit the program.
+
+## -- Code Additional Details -- ##
+All parts of this program are functional and runs as intended.
+
+## -- Language Version -- ##
+This program uses C89.
+
+## -- Code Version information -- ##
+Last Updated: < 08/05/2022 >
+
+Final Assignment Result: 100%
